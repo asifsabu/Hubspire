@@ -1,38 +1,203 @@
-.App {
-  text-align: center;
+body {
+  font-family: "Inter", sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* navbar styles starts here */
+.navbar {
+  padding: 50px 0;
+  background-color: #009ff9;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navbar .nav-link {
+  padding: 0 40px !important;
+  color: white !important;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 18px;
+  text-transform: uppercase;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+/* navbar styles ends here */
+/* banner styles starts here */
+.banner {
+  padding: 60px 0;
+  background-color: #009ff9;
+}
+.banner-title {
+  font-weight: 600;
+  font-size: 40px;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.banner-text {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  color: white;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* banner styles ends here */
+.registration-section {
+  position: relative;
+  text-align: center;
+  z-index: 2;
+}
+.registration-section::after {
+  content: "";
+  position: absolute;
+  background: #d7e9f6;
+  height: 200px;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.registration-title {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 48px;
+  padding: 50px 0;
+  color: #495375;
+}
+.registration-section i {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  border: 1px solid #6b6b6b;
+  background: white;
+}
+.registration-section i.active {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  color: white;
+  border: none;
+  background: #009ff9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.registration-section p {
+  color: #009ff9;
+}
+.registration-section ul {
+  padding: 45px 0;
+  margin: 0;
+}
+.registration-section .card {
+  background: #ffffff;
+  box-shadow: -6px 8px 17px 1px rgba(0, 0, 0, 0.11);
+  border-radius: 33px;
+}
+.identification-section {
+  padding: 50px 0;
+}
+.identification-section .nav-tabs .nav-item {
+  width: 50%;
+}
+.identification-section .nav-tabs .nav-item .nav-link {
+  background: #ffffff;
+  color: #6b6b6b;
+  box-sizing: border-box;
+  box-shadow: -6px 8px 17px 1px rgba(106, 105, 105, 0.11);
+  border-radius: 24px;
+  font-size: 24px;
+  margin: auto;
+  height: 100px;
+  margin-bottom: 70px;
+  width: 220px;
+}
+.identification-section .nav-tabs .nav-item .nav-link.active {
+  border: 1px solid #009ff9;
+}
+.form-label {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #6b6b6b;
+  margin-bottom: 25px;
+}
+.form-outer {
+  max-width: 460px;
+  margin: auto;
+}
+.section-subtitle {
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 36px;
+  letter-spacing: 0.02em;
+  color: #6b6b6b;
+  margin-bottom: 40px;
+}
+.form-outer .form-control {
+  border: 1px solid #464646;
+  box-sizing: border-box;
+  border-radius: 15px;
+  margin-bottom: 29px;
+}
+.form-outer .btn-primary,
+.btn-primary {
+  background: #009ff9;
+  border-radius: 15px;
+  font-size: 19px;
+  color: white;
+  width: 100%;
+}
+.center-selection {
+  padding: 50px 0;
+}
+.center-selection h1 {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #009ff9;
+}
+.center-selection .form-select {
+  border: 1px solid #464646;
+  box-sizing: border-box;
+  border-radius: 15px;
+}
+.detail-section {
+  padding: 50px 0;
+}
+.detail-section .card {
+  background: #ffffff;
+  box-shadow: -6px 8px 17px 1px rgba(106, 105, 105, 0.11);
+  border-radius: 24px;
+  text-align: center;
+}
+.detail-section .card.highlight {
+  border: 1px solid #009ff9;
+}
+.detail-section .card p {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  margin: 0;
+  padding: 28px 38px;
+  color: #6b6b6b;
+}
+.table thead {
+  border-radius: 15px;
+}
+.table thead th {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #6b6b6b;
+  background: #dcdcdc;
+}
+.table thead tr th:first-child {
+  border-bottom-left-radius: 15px;
+  border-top-left-radius: 15px;
+  border: none;
+}
+.table thead tr th:last-child {
+  border-bottom-right-radius: 15px;
+  border-top-right-radius: 15px;
+  border: none;
+}
+.table > :not(:first-child) {
+  border-top: 8px solid white;
+  
+}
+.table>:not(:first-child) {
+  box-shadow: -6px 8px 17px 1px rgba(0, 0, 0, 0.11);
+  border-radius: 24px;
 }

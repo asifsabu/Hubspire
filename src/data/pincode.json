@@ -1,0 +1,80 @@
+{
+    "centers": [
+        {
+            "center_id": 867675,
+            "name": "PKM HOSPITAL PANDIKKAD",
+            "address": "PKM Hospital Melattur Road Pandikkad P.o Malappuram",
+            "state_name": "Kerala",
+            "district_name": "Malappuram",
+            "block_name": "Melattur CHC",
+            "pincode": 676521,
+            "lat": 11,
+            "long": 76,
+            "from": "09:00:00",
+            "to": "17:30:00",
+            "fee_type": "Paid",
+            "sessions": [
+                {
+                    "session_id": "7085f031-84b4-4803-8ab3-d03e8c55f33b",
+                    "date": "14-09-2021",
+                    "available_capacity": 40,
+                    "min_age_limit": 18,
+                    "allow_all_age": true,
+                    "vaccine": "COVISHIELD",
+                    "slots": [
+                        "09:00AM-11:00AM",
+                        "11:00AM-01:00PM",
+                        "01:00PM-03:00PM",
+                        "03:00PM-05:30PM"
+                    ],
+                    "available_capacity_dose1": 20,
+                    "available_capacity_dose2": 20
+                }
+            ],
+            "vaccine_fees": [
+                {
+                    "vaccine": "COVISHIELD",
+                    "fee": "780"
+                }
+            ]
+        },
+        {
+            "center_id": 576476,
+            "name": "Moulana Hospital",
+            "address": "Perinthalmanna",
+            "state_name": "Kerala",
+            "district_name": "Malappuram",
+            "block_name": "Melattur CHC",
+            "pincode": 679322,
+            "lat": 10,
+            "long": 76,
+            "from": "09:00:00",
+            "to": "14:00:00",
+            "fee_type": "Paid",
+            "sessions": [
+                {
+                    "session_id": "ffd42b5c-6d0b-4051-9525-1e90bd217d54",
+                    "date": "15-09-2021",
+                    "available_capacity": 380,
+                    "min_age_limit": 18,
+                    "allow_all_age": true,
+                    "vaccine": "COVISHIELD",
+                    "slots": [
+                        "09:00AM-10:00AM",
+                        "10:00AM-11:00AM",
+                        "11:00AM-12:00PM",
+                        "12:00PM-02:00PM"
+                    ],
+                    "available_capacity_dose1": 190,
+                    "available_capacity_dose2": 190
+                }
+            ],
+            "vaccine_fees": [
+                {
+                    "vaccine": "COVISHIELD",
+                    "fee": "780"
+                }
+            ]
+        }
+    ]
+}
