@@ -3,6 +3,10 @@ import { Tabs, Tab, Table } from 'react-bootstrap';
 import StateComponent from '../components/StateComponent';
 import DistrictComponent from '../components/DistrictComponent';
 import PincodeComponent from '../components/PincodeComponent';
+import AadharComponent from '../components/AadharComponent';
+import BirthComponent from '../components/BirthComponent';
+import PassportComponent from '../components/PassportComponent';
+import StudentComponent from '../components/StudentComponent'
 
 
 export default class HomeComponent extends Component {
@@ -66,30 +70,26 @@ export default class HomeComponent extends Component {
                                     <Tab eventKey="Aadhar" title="Aadhar ID">
                                         <div className="form-outer">
                                             <p className="form-label">Enter your Aadhar Number</p>
-                                            <input className="form-control" type="text" required / >
-                                            <button className="btn btn-primary">Submit</button>
+                                            <AadharComponent />
                                         </div>
                                     </Tab>
                                     <Tab eventKey="student" title="Student ID">
                                         <div className="form-outer">
                                             <p className="form-label">Enter your Student Id</p>
-                                            <input className="form-control" type="text" />
-                                            <button className="btn btn-primary">Submit</button>
+                                            <StudentComponent />
                                         </div>
                                     </Tab>
                                     <Tab eventKey="passport" title="Passport">
                                         <div className="form-outer">
                                             <p className="form-label">Enter your Passport</p>
-                                            <input className="form-control" type="text" />
-                                            <button className="btn btn-primary">Submit</button>
+                                            <PassportComponent />
                                         </div>
                                     </Tab>
 
                                     <Tab eventKey="certificate" title="Birth Certificate">
                                         <div className="form-outer">
                                             <p className="form-label">Enter your Birth Certificate</p>
-                                            <input className="form-control" type="text" />
-                                            <button className="btn btn-primary">Submit</button>
+                                            <BirthComponent />
                                         </div>
                                     </Tab>
                                 </Tabs>

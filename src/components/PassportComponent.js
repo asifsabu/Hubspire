@@ -1,12 +1,24 @@
-import React, { Component } from 'react';
+import React from 'react';
+import { useForm } from "react-hook-form";
 
 
-export default class PassportComponent extends Component {
-    render() {
-        return (
-            <div>
-                <h1>passport</h1>
-            </div>
-        )
-    }
+function PassportComponent() {
+
+    const { register, handleSubmit, watch, formState: { errors } } = useForm();
+    const onSubmit = data => console.log(data);
+
+    return (
+        <div>
+           <form onSubmit={handleSubmit(onSubmit)}>
+                {/* include validation with required or other standard HTML validation rules */}
+                <input className="form-control" {...register("exampleRequired", { required: true })} />
+                {/* errors will return when field validation fails  */}
+                {errors.exampleRequired && <div className="text-danger">Please enter Passport number</div>}
+
+                <input className="btn btn-primary" type="submit" />
+            </form>
+        </div>
+    )
 }
+
+export default  PassportComponent;

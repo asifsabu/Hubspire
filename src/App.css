@@ -129,7 +129,9 @@ body {
   border: 1px solid #464646;
   box-sizing: border-box;
   border-radius: 15px;
-  margin-bottom: 29px;
+}
+.form-outer .btn-primary {
+  margin-top: 29px;
 }
 .form-outer .btn-primary,
 .btn-primary {

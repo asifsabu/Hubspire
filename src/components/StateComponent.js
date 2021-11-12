@@ -1,19 +1,37 @@
 import React, { Component } from 'react';
 import { Form } from 'react-bootstrap';
+import axios from 'axios';
 
 
 export default class StateComponent extends Component {
 
-    render() {
+    constructor() {
+        super()
+        this.state = {
+            statelist: []
+        }
+    }
 
-        const country = require('../data/state.json');
+    componentDidMount() {
+        axios.get('https://cdndemo-api.co-vin.in/api/v2/admin/location/states')
+        .then(responce=> {
+            // console.log(responce.data.states)
+            this.setState({statelist:responce.data.states})
+        })
+    }
+
+    render() {
 
         return (
             <div className="drop-down">
                 <h1>State</h1>
                 <Form.Select>
                     {
-                        country.states.map(item => <option value={item.state_name}>{item.state_name}</option>)
+                        this.state.statelist.map(function(st, k) {
+                            return(
+                            <option key={k} value={st.state_name} >{st.state_name}</option>
+                            )
+                        })
                     }
                 </Form.Select>
             </div>
